@@ -5,6 +5,6 @@ function myFunction() {
 }
 
 function showPage() {
-  document.getElementById("loader").style.display = "none";
+  document.getElementById("spin").style.display = "none";
   document.getElementById("main").style.display = "block";
 }
