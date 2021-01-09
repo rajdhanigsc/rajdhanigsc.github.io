@@ -1,0 +1,140 @@
+---
+title: Python Notes Topic 3
+author: ajeet
+---
+
+
+    
+    </div>
+    <h1 id="creating-a-tuple">Creating a Tuple</h1>
+    <p>Tuples are another type similar to lists. They store values of any type separated by commas. But how do they differ from lists?</p>
+    <ul>
+    <li><p>Firstly, they start and end with parenthesis ().</p>
+    <p>For example</p>
+    <p><code>(1,2,3,4)</code></p></li>
+    <li><p>But the main difference that <strong>unlike lists, tuples are immutable i.e., they cannot be updated/changed</strong>. You can think of them as <strong>read only lists</strong>.</p></li>
+    </ul>
+    <p>As discussed above, it should begin and end with parenthesis.</p>
+    <p>Takin the same example of weights from our discussion on lists</p>
+    <p><code>scores = (80,90,95,100)</code> The only difference is that we cannot change the values inside it.</p>
+    <h2 id="common-tuple-operations">Common tuple operations</h2>
+    <p>Let us take two tuples a = (1,2) and b = (3,4) for this purpose</p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th style="text-align: center;">Expession</th>
+    <th style="text-align: center;">Description</th>
+    <th style="text-align: center;">Example</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td style="text-align: center;">len(a)</td>
+    <td style="text-align: center;">Length of tuple</td>
+    <td style="text-align: center;">2</td>
+    </tr>
+    <tr class="even">
+    <td style="text-align: center;">a + b</td>
+    <td style="text-align: center;">Concatenation</td>
+    <td style="text-align: center;">(1,2,3,4)</td>
+    </tr>
+    <tr class="odd">
+    <td style="text-align: center;">a*4</td>
+    <td style="text-align: center;">Repitition</td>
+    <td style="text-align: center;">(1,2,1,2,1,2,1,2)</td>
+    </tr>
+    <tr class="even">
+    <td style="text-align: center;">2 in a</td>
+    <td style="text-align: center;">Membership</td>
+    <td style="text-align: center;">True</td>
+    </tr>
+    <tr class="odd">
+    <td style="text-align: center;">max(a)</td>
+    <td style="text-align: center;">Maximum value in tuple</td>
+    <td style="text-align: center;">2</td>
+    </tr>
+    <tr class="even">
+    <td style="text-align: center;">min(a)</td>
+    <td style="text-align: center;">Minimum value in tuple 1</td>
+    <td style="text-align: center;"></td>
+    </tr>
+    <tr class="odd">
+    <td style="text-align: center;">a[0]</td>
+    <td style="text-align: center;">Indexing</td>
+    <td style="text-align: center;">1</td>
+    </tr>
+    <tr class="even">
+    <td style="text-align: center;">a[:2]</td>
+    <td style="text-align: center;">Slicing</td>
+    <td style="text-align: center;">(1,2)</td>
+    </tr>
+    </tbody>
+    </table>
+    <p>We cannot delete an element from the tuple(as they are immutable), but we can delete the entire tuple.</p>
+    <p># <span style="color: gray">create tuple tuple of weights</span></p>
+    <p>weights = (70, 80, 45, 50)</p>
+    <p># <span style="color: gray">code starts here</span></p>
+    <p># <span style="color: gray">create new tuple of weights</span></p>
+    <p>weights_new = (70, 80, 45,50)</p>
+    <p># <span style="color: gray">calculate maximum and minimum weights</span></p>
+    <p>maximum = max(weights_new)</p>
+    <p>minimum = min(weights_new)</p>
+    <p># <span style="color: gray">calculate sum of weights</span></p>
+    <p>sum_weights = sum(weights_new)</p>
+    <p>l = len(weights_new)</p>
+    <p># <span style="color: gray">calculate mean</span></p>
+    <p>mean_new = sum_weights/l</p>
+    <p>print(maximum, minimum, sum_weights, mean_new)</p>
+    <p># <span style="color: gray">code ends here</span></p>
+    <h1 id="mutable-vs-immutable">Mutable vs immutable</h1>
+    <h2 id="introduction">Introduction</h2>
+    <p>We have been hearing about <strong>mutable</strong> and <strong>immutable</strong> all along. Simply put, objects which can be modified after creation in the same memory location are called <strong>mutable</strong> and the others which cannot, are termed <strong>immutable</strong>.</p>
+    <p><strong>Immutable objects</strong>: int, float, long, complex, string, tuple, bool <strong>Mutable objects</strong>: list, dict, set, byte, array, user defined classes.</p>
+    <h2 id="checking-mutability">Checking Mutability</h2>
+    <p>We can check if an object is mutable by first modifying the object and then comparing its new memory location with the old memory location. We can check for memory location either by using the <code>id()</code> function, which gives us memory location of the object or with the help of <code>is</code> operator, which checks for the identity of two objects.</p>
+    <p>First let’s take an integer (type <code>int</code>) 50 and add 1 to it with the same variable name, then check its memory location before and after the modification, with <code>id()</code> function. As it turns out, both have different memory locations, and hence it is an immutable type.</p>
+    <p># <span style="color: gray">initial variable</span></p>
+    <p>a = 50</p>
+    <p># <span style="color: gray">initial memory location</span></p>
+    <p>print(id(a))</p>
+    <p># <span style="color: gray">modified variable</span></p>
+    <p>a += 1</p>
+    <p># <span style="color: gray">new memory location, is it same?</span></p>
+    <p>print(id(a))</p>
+    <p><strong>Output</strong></p>
+    <p>94285850046496</p>
+    <p>94285850046528</p>
+    <p>Now let’s make a list with values [1,2,3,4] and add 5 to it with <code>.append()</code>. You observe that after modification, it still refers to the same memory location as before, and hence it is of mutable type.</p>
+    <p># <span style="color: gray">initial list</span></p>
+    <p>l = [1,2,3,4]</p>
+    <p># <span style="color: gray">initial memory location</span></p>
+    <p>print(id(l))</p>
+    <p>print(’=’*20)</p>
+    <p># <span style="color: gray">new list</span></p>
+    <p>l.append(5)</p>
+    <p>print(l)</p>
+    <p>print(’=’*20)</p>
+    <p># <span style="color: gray">new memory location</span></p>
+    <p>print(id(l))</p>
+    <p><strong>Output</strong></p>
+    <p>2083508003264</p>
+    <p>====================</p>
+    <p>[1, 2, 3, 4, 5]</p>
+    <p>====================</p>
+    <p>2083508003264</p>
+    <h1 id="what-are-operators">What are Operators?</h1>
+    <h2 id="introduction-1">Introduction</h2>
+    <p>Operators are special symbols in Python that carry out arithmatic or logical computation. The values that the operator operates on is called operand.</p>
+    <p>For example,</p>
+    <p>In the <code>3 + 3 = 6</code> operation, the numbers on the left-hand side of the = sign, i.e., 3 and 3 are operands while + is the operator and 6 is the output of the operation.</p>
+    <h2 id="types-of-operators">Types of operators</h2>
+    <p>Python supports the following types of operators —</p>
+    <ul>
+    <li><p>Arithmatic Operators</p></li>
+    <li><p>Comparison (Relational) Operators</p></li>
+    <li><p>Logical Operators</p></li>
+    <li><p>Assignment Operators</p></li>
+    <li><p>Bitwise Operators</p></li>
+    <li><p>Membership Operators</p></li>
+    <li><p>Identity Operators</p></li>
+    </ul>

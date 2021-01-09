@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Python Notes Topic 2</title>
+    <link type="application/atom+xml" rel="alternate" href="ajeetsinghparmar.github.io/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Python Notes Topic 2</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Python Notes Topic 2" />
+<meta name="author" content="ajeet" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="&lt;/div&gt; &lt;h1 id=&quot;create-your-own-variable&quot;&gt;Create Your Own Variable&lt;/h1&gt; &lt;p&gt;In this task, you will assign names to variable and also check their types.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;Assign value of &lt;code&gt;12&lt;/code&gt; to a new variable &lt;code&gt;‘age’&lt;/code&gt; and John to &lt;code&gt;‘name’&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Save the type of age using &lt;code&gt;type(age)&lt;/code&gt; and save it to a variable &lt;code&gt;type_age&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Similarly save the type of name to a variable &lt;code&gt;type_name&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Print out the variables &lt;code&gt;type_age&lt;/code&gt; and &lt;code&gt;type_name&lt;/code&gt; using print() function.&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt; &lt;h2 id=&quot;test-cases&quot;&gt;Test Cases&lt;/h2&gt; &lt;p&gt;The variable &lt;code&gt;‘age’&lt;/code&gt; should be int with value &lt;span class=&quot;math inline&quot;&gt;\(12\)&lt;/span&gt;. The variable &lt;code&gt;‘name’&lt;/code&gt; should be string with value &lt;code&gt;‘John’&lt;/code&gt;, i.e.,&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;type(age) == int&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;age == 12&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;type(name) == str&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;name == “John”&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;# Code Starts Here&lt;br /&gt; # Assign variables name&lt;br /&gt; age = 12&lt;br /&gt; name = ‘John’&lt;br /&gt; # check types&lt;br /&gt; type_name = type(name)&lt;br /&gt; type_age = type(age)&lt;br /&gt; # print out types&lt;br /&gt; print(type_name)&lt;br /&gt; print(type_age)&lt;br /&gt; # Code ends here&lt;br /&gt; &lt;/p&gt; &lt;h1 id=&quot;numbers&quot;&gt;Numbers&lt;/h1&gt; &lt;h2 id=&quot;numeric-types&quot;&gt;Numeric Types&lt;/h2&gt; &lt;p&gt;It is used to store values.&lt;br /&gt; For Example:&lt;/p&gt; &lt;p&gt;x = 5&lt;br /&gt; y = 10&lt;br /&gt; balance = 15000&lt;br /&gt; etc&lt;/p&gt; &lt;p&gt;Python supports three different types of numbers, listed as follows:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;int (integers)&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;float (decimal numbers)&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;complex (complex numbers)&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt; &lt;h3 id=&quot;integers&quot;&gt;Integers&lt;/h3&gt; &lt;p&gt;Integers are positive and negative whole numbers with no decimal point.&lt;/p&gt; &lt;p&gt;For Example:&lt;/p&gt; &lt;p&gt;2 and 4 are integers&lt;/p&gt; &lt;h3 id=&quot;float&quot;&gt;Float&lt;/h3&gt; &lt;p&gt;Floats are the numbers containing a decimal point.&lt;/p&gt; &lt;p&gt;For Example:&lt;/p&gt; &lt;p&gt;2.3&lt;/p&gt; &lt;p&gt;Note that the numbers written in a scientific notation such as &lt;span class=&quot;math inline&quot;&gt;\(2.5*10^5\)&lt;/span&gt; are considered as float number because they contain a decimal point in notation.&lt;/p&gt; &lt;h3 id=&quot;complex-numbers&quot;&gt;Complex numbers&lt;/h3&gt; &lt;p&gt;Python also provides support to complex numbers of the form &lt;span class=&quot;math inline&quot;&gt;\(a+bj\)&lt;/span&gt; where a and b are floats and j is equals to &lt;span class=&quot;math inline&quot;&gt;\(\sqrt{-1}\)&lt;/span&gt;.&lt;/p&gt; &lt;h1 id=&quot;common-numeric-operations&quot;&gt;Common Numeric Operations&lt;/h1&gt; &lt;table&gt; &lt;thead&gt; &lt;tr class=&quot;header&quot;&gt; &lt;th style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Symbol&lt;/strong&gt;&lt;/th&gt; &lt;th style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Function&lt;/strong&gt;&lt;/th&gt; &lt;th style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr class=&quot;odd&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;+&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Addition&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\(2+3\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;even&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Subtraction&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\(2-3\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;odd&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;*&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Multiplication&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\(2*3\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;even&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;//&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Integer division (returns quotient only)&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\(3/3\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;odd&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;/&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;division&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\(3/2\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;even&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;**&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Exponantiation&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\(2^3\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;odd&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;abs(x)&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Absolute value&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\(\|x\|\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;even&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;exp(x)&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Exponantial x&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\(e^x\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;odd&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;log(x)&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Logarithm with base e&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\(log_ex\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;even&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;log10(x)&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Logarithm with base 10&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\(log_{10}x\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;odd&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;pow(x,y)&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;x raised to power y&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\(x^y\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; &lt;h1 id=&quot;type-conversion&quot;&gt;Type Conversion&lt;/h1&gt; &lt;p&gt;During data manipulation, there might arise a need for converting an integer to float, float to an integer, float to a string or a string (having a number) to an integer or float. Lets look at how we can do this.&lt;/p&gt; &lt;p&gt;Let’s say we have a number ‘x’. The following some operations can be done:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;int(x)&lt;/code&gt; converts it to an integer.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;float(x)&lt;/code&gt; converts it to a float.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;complex(x)&lt;/code&gt; converts it to a complex number with real part x and imaginary part 0.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;We can convert an integer, a float or a complex to a string by &lt;code&gt;str(x)&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt; &lt;h2 id=&quot;calculate-the-compound-interest&quot;&gt;Calculate the compound interest&lt;/h2&gt; &lt;p&gt;In this problem, you will calculate the compound interest. Remember that the formula for compound interest for the amount ‘A’ after ‘n’ years is &lt;span class=&quot;math display&quot;&gt;\[A = P \left(1 + \frac{r}{100} \right) ^n\]&lt;/span&gt; Here, A is the amount after n years, r is the rate of interest per annum, and P is the principal.&lt;/p&gt; &lt;p&gt;Our task is to calculate the amount after two years when principal amount is USD 1000 at a rate of 10% per annum.&lt;/p&gt; &lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;Save principal, rate of interest and time in variables p, r and n respectively.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Now calculate the amount according to formula given above and save it in a variable A.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Calculate interest by formula &lt;span class=&quot;math inline&quot;&gt;\(A-P\)&lt;/span&gt; and store it in variable Interest.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Print out interest using print() function.&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;# Code Starts Here&lt;br /&gt; # Store variable names&lt;br /&gt; p = 1000&lt;br /&gt; r = 10&lt;br /&gt; n = 2&lt;br /&gt; # Amount formula&lt;br /&gt; A = p*(1+10/100)**2&lt;br /&gt; # Display Amount&lt;br /&gt; print(A)&lt;br /&gt; # Calculate and display interest&lt;br /&gt; interest = A-P print(interest)&lt;/p&gt; &lt;p&gt;# Code ends here&lt;/p&gt; &lt;h1 id=&quot;string&quot;&gt;String&lt;/h1&gt; &lt;p&gt;Strings can be written in three ways:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;Single quotes.&lt;/p&gt; &lt;p&gt;Example:&lt;/p&gt; &lt;p&gt;&lt;code&gt;name = ‘Ajeet’&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Double quotes&lt;/p&gt; &lt;p&gt;Example:&lt;/p&gt; &lt;p&gt;&lt;code&gt;name = “Ajeet”&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Triple quotes: They are used as multi line comment and also used to make docstrings of a defined function.&lt;/p&gt; &lt;p&gt;Example:&lt;/p&gt; &lt;p&gt;&lt;code&gt;“‘This is a function. Do not change it, or else it will not work.’”&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;We can use Python’s built in len() function to find the length of string.&lt;/p&gt; &lt;h2 id=&quot;slicing-and-indexing-of-strings&quot;&gt;Slicing and Indexing of Strings&lt;/h2&gt; &lt;p&gt;Indexing means giving every character of string a unique value. Indexing in Python starts from zero, that means first letter of string has a value zero (not 1). All the iterables (String, dictionaries, tuples, sets) have this property.&lt;/p&gt; &lt;table&gt; &lt;tbody&gt; &lt;tr class=&quot;odd&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;0&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;1&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;2&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;3&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;4&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;5&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;6&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;7&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;8&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;9&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;10&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;11&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;even&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;M&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;O&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;N&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;T&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Y&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;P&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Y&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;T&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;H&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;O&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;N&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;odd&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-12&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-11&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-10&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-9&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-8&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-7&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-6&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-5&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-4&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-4&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-3&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-1&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; &lt;p&gt;In the above image, for the string “Monty Python”, the following points can be noticed.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;From left to right, index goes from 0 to (length of string - 1).&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;From right to left, index goes from -(length of string) to -1.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Ommiting term before or after the colon (:) means including everything from starting or till the end, respectively.&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;The syntex for slicing in Python, in general, is &lt;strong&gt;[Start index(included):Stop index(excluded)]&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;In the above example:&lt;/p&gt; &lt;p&gt;if we assign variable&lt;/p&gt; &lt;p&gt;name = “Monty Python”&lt;/p&gt; &lt;p&gt;then:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;name[6:10]&lt;/code&gt; returns &lt;code&gt;Pyth&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;name[-12:-7]&lt;/code&gt; returns &lt;code&gt;Monty&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;name[:4]&lt;/code&gt; returns &lt;code&gt;Monty&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;name[6:]&lt;/code&gt; returns &lt;code&gt;Python&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;name[:]&lt;/code&gt; returns &lt;code&gt;Monty Python&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;name[-6:9]&lt;/code&gt; returns &lt;code&gt;Pyt&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt;" />
+<meta property="og:description" content="&lt;/div&gt; &lt;h1 id=&quot;create-your-own-variable&quot;&gt;Create Your Own Variable&lt;/h1&gt; &lt;p&gt;In this task, you will assign names to variable and also check their types.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;Assign value of &lt;code&gt;12&lt;/code&gt; to a new variable &lt;code&gt;‘age’&lt;/code&gt; and John to &lt;code&gt;‘name’&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Save the type of age using &lt;code&gt;type(age)&lt;/code&gt; and save it to a variable &lt;code&gt;type_age&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Similarly save the type of name to a variable &lt;code&gt;type_name&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Print out the variables &lt;code&gt;type_age&lt;/code&gt; and &lt;code&gt;type_name&lt;/code&gt; using print() function.&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt; &lt;h2 id=&quot;test-cases&quot;&gt;Test Cases&lt;/h2&gt; &lt;p&gt;The variable &lt;code&gt;‘age’&lt;/code&gt; should be int with value &lt;span class=&quot;math inline&quot;&gt;\(12\)&lt;/span&gt;. The variable &lt;code&gt;‘name’&lt;/code&gt; should be string with value &lt;code&gt;‘John’&lt;/code&gt;, i.e.,&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;type(age) == int&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;age == 12&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;type(name) == str&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;name == “John”&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;# Code Starts Here&lt;br /&gt; # Assign variables name&lt;br /&gt; age = 12&lt;br /&gt; name = ‘John’&lt;br /&gt; # check types&lt;br /&gt; type_name = type(name)&lt;br /&gt; type_age = type(age)&lt;br /&gt; # print out types&lt;br /&gt; print(type_name)&lt;br /&gt; print(type_age)&lt;br /&gt; # Code ends here&lt;br /&gt; &lt;/p&gt; &lt;h1 id=&quot;numbers&quot;&gt;Numbers&lt;/h1&gt; &lt;h2 id=&quot;numeric-types&quot;&gt;Numeric Types&lt;/h2&gt; &lt;p&gt;It is used to store values.&lt;br /&gt; For Example:&lt;/p&gt; &lt;p&gt;x = 5&lt;br /&gt; y = 10&lt;br /&gt; balance = 15000&lt;br /&gt; etc&lt;/p&gt; &lt;p&gt;Python supports three different types of numbers, listed as follows:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;int (integers)&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;float (decimal numbers)&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;complex (complex numbers)&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt; &lt;h3 id=&quot;integers&quot;&gt;Integers&lt;/h3&gt; &lt;p&gt;Integers are positive and negative whole numbers with no decimal point.&lt;/p&gt; &lt;p&gt;For Example:&lt;/p&gt; &lt;p&gt;2 and 4 are integers&lt;/p&gt; &lt;h3 id=&quot;float&quot;&gt;Float&lt;/h3&gt; &lt;p&gt;Floats are the numbers containing a decimal point.&lt;/p&gt; &lt;p&gt;For Example:&lt;/p&gt; &lt;p&gt;2.3&lt;/p&gt; &lt;p&gt;Note that the numbers written in a scientific notation such as &lt;span class=&quot;math inline&quot;&gt;\(2.5*10^5\)&lt;/span&gt; are considered as float number because they contain a decimal point in notation.&lt;/p&gt; &lt;h3 id=&quot;complex-numbers&quot;&gt;Complex numbers&lt;/h3&gt; &lt;p&gt;Python also provides support to complex numbers of the form &lt;span class=&quot;math inline&quot;&gt;\(a+bj\)&lt;/span&gt; where a and b are floats and j is equals to &lt;span class=&quot;math inline&quot;&gt;\(\sqrt{-1}\)&lt;/span&gt;.&lt;/p&gt; &lt;h1 id=&quot;common-numeric-operations&quot;&gt;Common Numeric Operations&lt;/h1&gt; &lt;table&gt; &lt;thead&gt; &lt;tr class=&quot;header&quot;&gt; &lt;th style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Symbol&lt;/strong&gt;&lt;/th&gt; &lt;th style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Function&lt;/strong&gt;&lt;/th&gt; &lt;th style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr class=&quot;odd&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;+&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Addition&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\(2+3\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;even&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Subtraction&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\(2-3\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;odd&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;*&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Multiplication&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\(2*3\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;even&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;//&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Integer division (returns quotient only)&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\(3/3\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;odd&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;/&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;division&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\(3/2\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;even&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;**&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Exponantiation&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\(2^3\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;odd&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;abs(x)&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Absolute value&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\(\|x\|\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;even&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;exp(x)&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Exponantial x&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\(e^x\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;odd&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;log(x)&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Logarithm with base e&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\(log_ex\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;even&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;log10(x)&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Logarithm with base 10&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\(log_{10}x\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;odd&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;pow(x,y)&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;x raised to power y&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\(x^y\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; &lt;h1 id=&quot;type-conversion&quot;&gt;Type Conversion&lt;/h1&gt; &lt;p&gt;During data manipulation, there might arise a need for converting an integer to float, float to an integer, float to a string or a string (having a number) to an integer or float. Lets look at how we can do this.&lt;/p&gt; &lt;p&gt;Let’s say we have a number ‘x’. The following some operations can be done:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;int(x)&lt;/code&gt; converts it to an integer.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;float(x)&lt;/code&gt; converts it to a float.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;complex(x)&lt;/code&gt; converts it to a complex number with real part x and imaginary part 0.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;We can convert an integer, a float or a complex to a string by &lt;code&gt;str(x)&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt; &lt;h2 id=&quot;calculate-the-compound-interest&quot;&gt;Calculate the compound interest&lt;/h2&gt; &lt;p&gt;In this problem, you will calculate the compound interest. Remember that the formula for compound interest for the amount ‘A’ after ‘n’ years is &lt;span class=&quot;math display&quot;&gt;\[A = P \left(1 + \frac{r}{100} \right) ^n\]&lt;/span&gt; Here, A is the amount after n years, r is the rate of interest per annum, and P is the principal.&lt;/p&gt; &lt;p&gt;Our task is to calculate the amount after two years when principal amount is USD 1000 at a rate of 10% per annum.&lt;/p&gt; &lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;Save principal, rate of interest and time in variables p, r and n respectively.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Now calculate the amount according to formula given above and save it in a variable A.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Calculate interest by formula &lt;span class=&quot;math inline&quot;&gt;\(A-P\)&lt;/span&gt; and store it in variable Interest.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Print out interest using print() function.&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;# Code Starts Here&lt;br /&gt; # Store variable names&lt;br /&gt; p = 1000&lt;br /&gt; r = 10&lt;br /&gt; n = 2&lt;br /&gt; # Amount formula&lt;br /&gt; A = p*(1+10/100)**2&lt;br /&gt; # Display Amount&lt;br /&gt; print(A)&lt;br /&gt; # Calculate and display interest&lt;br /&gt; interest = A-P print(interest)&lt;/p&gt; &lt;p&gt;# Code ends here&lt;/p&gt; &lt;h1 id=&quot;string&quot;&gt;String&lt;/h1&gt; &lt;p&gt;Strings can be written in three ways:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;Single quotes.&lt;/p&gt; &lt;p&gt;Example:&lt;/p&gt; &lt;p&gt;&lt;code&gt;name = ‘Ajeet’&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Double quotes&lt;/p&gt; &lt;p&gt;Example:&lt;/p&gt; &lt;p&gt;&lt;code&gt;name = “Ajeet”&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Triple quotes: They are used as multi line comment and also used to make docstrings of a defined function.&lt;/p&gt; &lt;p&gt;Example:&lt;/p&gt; &lt;p&gt;&lt;code&gt;“‘This is a function. Do not change it, or else it will not work.’”&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;We can use Python’s built in len() function to find the length of string.&lt;/p&gt; &lt;h2 id=&quot;slicing-and-indexing-of-strings&quot;&gt;Slicing and Indexing of Strings&lt;/h2&gt; &lt;p&gt;Indexing means giving every character of string a unique value. Indexing in Python starts from zero, that means first letter of string has a value zero (not 1). All the iterables (String, dictionaries, tuples, sets) have this property.&lt;/p&gt; &lt;table&gt; &lt;tbody&gt; &lt;tr class=&quot;odd&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;0&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;1&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;2&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;3&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;4&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;5&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;6&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;7&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;8&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;9&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;10&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;11&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;even&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;M&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;O&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;N&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;T&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Y&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;P&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Y&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;T&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;H&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;O&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;N&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;odd&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-12&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-11&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-10&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-9&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-8&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-7&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-6&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-5&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-4&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-4&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-3&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-1&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; &lt;p&gt;In the above image, for the string “Monty Python”, the following points can be noticed.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;From left to right, index goes from 0 to (length of string - 1).&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;From right to left, index goes from -(length of string) to -1.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Ommiting term before or after the colon (:) means including everything from starting or till the end, respectively.&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;The syntex for slicing in Python, in general, is &lt;strong&gt;[Start index(included):Stop index(excluded)]&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;In the above example:&lt;/p&gt; &lt;p&gt;if we assign variable&lt;/p&gt; &lt;p&gt;name = “Monty Python”&lt;/p&gt; &lt;p&gt;then:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;name[6:10]&lt;/code&gt; returns &lt;code&gt;Pyth&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;name[-12:-7]&lt;/code&gt; returns &lt;code&gt;Monty&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;name[:4]&lt;/code&gt; returns &lt;code&gt;Monty&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;name[6:]&lt;/code&gt; returns &lt;code&gt;Python&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;name[:]&lt;/code&gt; returns &lt;code&gt;Monty Python&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;name[-6:9]&lt;/code&gt; returns &lt;code&gt;Pyt&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt;" />
+<link rel="canonical" href="ajeetsinghparmar.github.io/2021/01/09/python2.html" />
+<meta property="og:url" content="ajeetsinghparmar.github.io/2021/01/09/python2.html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-01-09T00:00:00+05:30" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Python Notes Topic 2" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"ajeetsinghparmar.github.io/2021/01/09/python2.html","headline":"Python Notes Topic 2","dateModified":"2021-01-09T00:00:00+05:30","datePublished":"2021-01-09T00:00:00+05:30","author":{"@type":"Person","name":"ajeet"},"mainEntityOfPage":{"@type":"WebPage","@id":"ajeetsinghparmar.github.io/2021/01/09/python2.html"},"description":"&lt;/div&gt; &lt;h1 id=&quot;create-your-own-variable&quot;&gt;Create Your Own Variable&lt;/h1&gt; &lt;p&gt;In this task, you will assign names to variable and also check their types.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;Assign value of &lt;code&gt;12&lt;/code&gt; to a new variable &lt;code&gt;‘age’&lt;/code&gt; and John to &lt;code&gt;‘name’&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Save the type of age using &lt;code&gt;type(age)&lt;/code&gt; and save it to a variable &lt;code&gt;type_age&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Similarly save the type of name to a variable &lt;code&gt;type_name&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Print out the variables &lt;code&gt;type_age&lt;/code&gt; and &lt;code&gt;type_name&lt;/code&gt; using print() function.&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt; &lt;h2 id=&quot;test-cases&quot;&gt;Test Cases&lt;/h2&gt; &lt;p&gt;The variable &lt;code&gt;‘age’&lt;/code&gt; should be int with value &lt;span class=&quot;math inline&quot;&gt;\\(12\\)&lt;/span&gt;. The variable &lt;code&gt;‘name’&lt;/code&gt; should be string with value &lt;code&gt;‘John’&lt;/code&gt;, i.e.,&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;type(age) == int&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;age == 12&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;type(name) == str&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;name == “John”&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;# Code Starts Here&lt;br /&gt; # Assign variables name&lt;br /&gt; age = 12&lt;br /&gt; name = ‘John’&lt;br /&gt; # check types&lt;br /&gt; type_name = type(name)&lt;br /&gt; type_age = type(age)&lt;br /&gt; # print out types&lt;br /&gt; print(type_name)&lt;br /&gt; print(type_age)&lt;br /&gt; # Code ends here&lt;br /&gt; &lt;/p&gt; &lt;h1 id=&quot;numbers&quot;&gt;Numbers&lt;/h1&gt; &lt;h2 id=&quot;numeric-types&quot;&gt;Numeric Types&lt;/h2&gt; &lt;p&gt;It is used to store values.&lt;br /&gt; For Example:&lt;/p&gt; &lt;p&gt;x = 5&lt;br /&gt; y = 10&lt;br /&gt; balance = 15000&lt;br /&gt; etc&lt;/p&gt; &lt;p&gt;Python supports three different types of numbers, listed as follows:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;int (integers)&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;float (decimal numbers)&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;complex (complex numbers)&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt; &lt;h3 id=&quot;integers&quot;&gt;Integers&lt;/h3&gt; &lt;p&gt;Integers are positive and negative whole numbers with no decimal point.&lt;/p&gt; &lt;p&gt;For Example:&lt;/p&gt; &lt;p&gt;2 and 4 are integers&lt;/p&gt; &lt;h3 id=&quot;float&quot;&gt;Float&lt;/h3&gt; &lt;p&gt;Floats are the numbers containing a decimal point.&lt;/p&gt; &lt;p&gt;For Example:&lt;/p&gt; &lt;p&gt;2.3&lt;/p&gt; &lt;p&gt;Note that the numbers written in a scientific notation such as &lt;span class=&quot;math inline&quot;&gt;\\(2.5*10^5\\)&lt;/span&gt; are considered as float number because they contain a decimal point in notation.&lt;/p&gt; &lt;h3 id=&quot;complex-numbers&quot;&gt;Complex numbers&lt;/h3&gt; &lt;p&gt;Python also provides support to complex numbers of the form &lt;span class=&quot;math inline&quot;&gt;\\(a+bj\\)&lt;/span&gt; where a and b are floats and j is equals to &lt;span class=&quot;math inline&quot;&gt;\\(\\sqrt{-1}\\)&lt;/span&gt;.&lt;/p&gt; &lt;h1 id=&quot;common-numeric-operations&quot;&gt;Common Numeric Operations&lt;/h1&gt; &lt;table&gt; &lt;thead&gt; &lt;tr class=&quot;header&quot;&gt; &lt;th style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Symbol&lt;/strong&gt;&lt;/th&gt; &lt;th style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Function&lt;/strong&gt;&lt;/th&gt; &lt;th style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr class=&quot;odd&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;+&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Addition&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\\(2+3\\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;even&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Subtraction&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\\(2-3\\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;odd&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;*&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Multiplication&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\\(2*3\\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;even&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;//&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Integer division (returns quotient only)&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\\(3/3\\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;odd&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;/&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;division&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\\(3/2\\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;even&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;**&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Exponantiation&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\\(2^3\\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;odd&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;abs(x)&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Absolute value&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\\(\\|x\\|\\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;even&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;exp(x)&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Exponantial x&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\\(e^x\\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;odd&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;log(x)&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Logarithm with base e&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\\(log_ex\\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;even&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;log10(x)&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Logarithm with base 10&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\\(log_{10}x\\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;odd&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;pow(x,y)&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;x raised to power y&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;span class=&quot;math inline&quot;&gt;\\(x^y\\)&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; &lt;h1 id=&quot;type-conversion&quot;&gt;Type Conversion&lt;/h1&gt; &lt;p&gt;During data manipulation, there might arise a need for converting an integer to float, float to an integer, float to a string or a string (having a number) to an integer or float. Lets look at how we can do this.&lt;/p&gt; &lt;p&gt;Let’s say we have a number ‘x’. The following some operations can be done:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;int(x)&lt;/code&gt; converts it to an integer.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;float(x)&lt;/code&gt; converts it to a float.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;complex(x)&lt;/code&gt; converts it to a complex number with real part x and imaginary part 0.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;We can convert an integer, a float or a complex to a string by &lt;code&gt;str(x)&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt; &lt;h2 id=&quot;calculate-the-compound-interest&quot;&gt;Calculate the compound interest&lt;/h2&gt; &lt;p&gt;In this problem, you will calculate the compound interest. Remember that the formula for compound interest for the amount ‘A’ after ‘n’ years is &lt;span class=&quot;math display&quot;&gt;\\[A = P \\left(1 + \\frac{r}{100} \\right) ^n\\]&lt;/span&gt; Here, A is the amount after n years, r is the rate of interest per annum, and P is the principal.&lt;/p&gt; &lt;p&gt;Our task is to calculate the amount after two years when principal amount is USD 1000 at a rate of 10% per annum.&lt;/p&gt; &lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;Save principal, rate of interest and time in variables p, r and n respectively.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Now calculate the amount according to formula given above and save it in a variable A.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Calculate interest by formula &lt;span class=&quot;math inline&quot;&gt;\\(A-P\\)&lt;/span&gt; and store it in variable Interest.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Print out interest using print() function.&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;# Code Starts Here&lt;br /&gt; # Store variable names&lt;br /&gt; p = 1000&lt;br /&gt; r = 10&lt;br /&gt; n = 2&lt;br /&gt; # Amount formula&lt;br /&gt; A = p*(1+10/100)**2&lt;br /&gt; # Display Amount&lt;br /&gt; print(A)&lt;br /&gt; # Calculate and display interest&lt;br /&gt; interest = A-P print(interest)&lt;/p&gt; &lt;p&gt;# Code ends here&lt;/p&gt; &lt;h1 id=&quot;string&quot;&gt;String&lt;/h1&gt; &lt;p&gt;Strings can be written in three ways:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;Single quotes.&lt;/p&gt; &lt;p&gt;Example:&lt;/p&gt; &lt;p&gt;&lt;code&gt;name = ‘Ajeet’&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Double quotes&lt;/p&gt; &lt;p&gt;Example:&lt;/p&gt; &lt;p&gt;&lt;code&gt;name = “Ajeet”&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Triple quotes: They are used as multi line comment and also used to make docstrings of a defined function.&lt;/p&gt; &lt;p&gt;Example:&lt;/p&gt; &lt;p&gt;&lt;code&gt;“‘This is a function. Do not change it, or else it will not work.’”&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;We can use Python’s built in len() function to find the length of string.&lt;/p&gt; &lt;h2 id=&quot;slicing-and-indexing-of-strings&quot;&gt;Slicing and Indexing of Strings&lt;/h2&gt; &lt;p&gt;Indexing means giving every character of string a unique value. Indexing in Python starts from zero, that means first letter of string has a value zero (not 1). All the iterables (String, dictionaries, tuples, sets) have this property.&lt;/p&gt; &lt;table&gt; &lt;tbody&gt; &lt;tr class=&quot;odd&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;0&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;1&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;2&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;3&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;4&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;5&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;6&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;7&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;8&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;9&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;10&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;11&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;even&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;M&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;O&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;N&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;T&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Y&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;P&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;Y&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;T&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;H&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;O&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;N&lt;/td&gt; &lt;/tr&gt; &lt;tr class=&quot;odd&quot;&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-12&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-11&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-10&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-9&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-8&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-7&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-6&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-5&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-4&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-4&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-3&lt;/td&gt; &lt;td style=&quot;text-align: center;&quot;&gt;-1&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; &lt;p&gt;In the above image, for the string “Monty Python”, the following points can be noticed.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;From left to right, index goes from 0 to (length of string - 1).&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;From right to left, index goes from -(length of string) to -1.&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Ommiting term before or after the colon (:) means including everything from starting or till the end, respectively.&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;The syntex for slicing in Python, in general, is &lt;strong&gt;[Start index(included):Stop index(excluded)]&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;In the above example:&lt;/p&gt; &lt;p&gt;if we assign variable&lt;/p&gt; &lt;p&gt;name = “Monty Python”&lt;/p&gt; &lt;p&gt;then:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;name[6:10]&lt;/code&gt; returns &lt;code&gt;Pyth&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;name[-12:-7]&lt;/code&gt; returns &lt;code&gt;Monty&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;name[:4]&lt;/code&gt; returns &lt;code&gt;Monty&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;name[6:]&lt;/code&gt; returns &lt;code&gt;Python&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;name[:]&lt;/code&gt; returns &lt;code&gt;Monty Python&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;&lt;code&gt;name[-6:9]&lt;/code&gt; returns &lt;code&gt;Pyt&lt;/code&gt;&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt;","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">SB</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            
+          <li class="nav-item">
+            <a aria-current="page" href="/" class="nav-link">Home</a>
+          </li>
+          
+          <li class="nav-item">
+            <a aria-current="page" href="/about.html" class="nav-link">About</a>
+          </li>
+          
+          <li class="nav-item">
+            <a aria-current="page" href="/blog.html" class="nav-link">Blog</a>
+          </li>
+          
+          <li class="nav-item">
+            <a aria-current="page" href="/staff.html" class="nav-link">Staff</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<header id="title-block-header">
+<h1>Python Notes Topic 2</h1>
+<p>
+    09 Jan 2021
+    
+    
+     - <a href="/authors/ajeet.html">Ajeet Singh Parmar</a>
+     
+</p>
+</header>
+
+
+    </div>
+    <h1 id="create-your-own-variable">Create Your Own Variable</h1>
+    <p>In this task, you will assign names to variable and also check their types.</p>
+    <ul>
+    <li><p>Assign value of <code>12</code> to a new variable <code>‘age’</code> and John to <code>‘name’</code>.</p></li>
+    <li><p>Save the type of age using <code>type(age)</code> and save it to a variable <code>type_age</code>.</p></li>
+    <li><p>Similarly save the type of name to a variable <code>type_name</code></p></li>
+    <li><p>Print out the variables <code>type_age</code> and <code>type_name</code> using print() function.</p></li>
+    </ul>
+    <h2 id="test-cases">Test Cases</h2>
+    <p>The variable <code>‘age’</code> should be int with value <span class="math inline">\(12\)</span>. The variable <code>‘name’</code> should be string with value <code>‘John’</code>, i.e.,</p>
+    <ul>
+    <li><p>type(age) == int</p></li>
+    <li><p>age == 12</p></li>
+    <li><p>type(name) == str</p></li>
+    <li><p>name == “John”</p></li>
+    </ul>
+    <p># Code Starts Here<br />
+    # Assign variables name<br />
+    age = 12<br />
+    name = ‘John’<br />
+    # check types<br />
+    type_name = type(name)<br />
+    type_age = type(age)<br />
+    # print out types<br />
+    print(type_name)<br />
+    print(type_age)<br />
+    # Code ends here<br />
+    </p>
+    <h1 id="numbers">Numbers</h1>
+    <h2 id="numeric-types">Numeric Types</h2>
+    <p>It is used to store values.<br />
+    For Example:</p>
+    <p>x = 5<br />
+    y = 10<br />
+    balance = 15000<br />
+    etc</p>
+    <p>Python supports three different types of numbers, listed as follows:</p>
+    <ul>
+    <li><p>int (integers)</p></li>
+    <li><p>float (decimal numbers)</p></li>
+    <li><p>complex (complex numbers)</p></li>
+    </ul>
+    <h3 id="integers">Integers</h3>
+    <p>Integers are positive and negative whole numbers with no decimal point.</p>
+    <p>For Example:</p>
+    <p>2 and 4 are integers</p>
+    <h3 id="float">Float</h3>
+    <p>Floats are the numbers containing a decimal point.</p>
+    <p>For Example:</p>
+    <p>2.3</p>
+    <p>Note that the numbers written in a scientific notation such as <span class="math inline">\(2.5*10^5\)</span> are considered as float number because they contain a decimal point in notation.</p>
+    <h3 id="complex-numbers">Complex numbers</h3>
+    <p>Python also provides support to complex numbers of the form <span class="math inline">\(a+bj\)</span> where a and b are floats and j is equals to <span class="math inline">\(\sqrt{-1}\)</span>.</p>
+    <h1 id="common-numeric-operations">Common Numeric Operations</h1>
+    <table>
+    <thead>
+    <tr class="header">
+    <th style="text-align: center;"><strong>Symbol</strong></th>
+    <th style="text-align: center;"><strong>Function</strong></th>
+    <th style="text-align: center;"><strong>Example</strong></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td style="text-align: center;">+</td>
+    <td style="text-align: center;">Addition</td>
+    <td style="text-align: center;"><span class="math inline">\(2+3\)</span></td>
+    </tr>
+    <tr class="even">
+    <td style="text-align: center;">-</td>
+    <td style="text-align: center;">Subtraction</td>
+    <td style="text-align: center;"><span class="math inline">\(2-3\)</span></td>
+    </tr>
+    <tr class="odd">
+    <td style="text-align: center;">*</td>
+    <td style="text-align: center;">Multiplication</td>
+    <td style="text-align: center;"><span class="math inline">\(2*3\)</span></td>
+    </tr>
+    <tr class="even">
+    <td style="text-align: center;">//</td>
+    <td style="text-align: center;">Integer division (returns quotient only)</td>
+    <td style="text-align: center;"><span class="math inline">\(3/3\)</span></td>
+    </tr>
+    <tr class="odd">
+    <td style="text-align: center;">/</td>
+    <td style="text-align: center;">division</td>
+    <td style="text-align: center;"><span class="math inline">\(3/2\)</span></td>
+    </tr>
+    <tr class="even">
+    <td style="text-align: center;">**</td>
+    <td style="text-align: center;">Exponantiation</td>
+    <td style="text-align: center;"><span class="math inline">\(2^3\)</span></td>
+    </tr>
+    <tr class="odd">
+    <td style="text-align: center;">abs(x)</td>
+    <td style="text-align: center;">Absolute value</td>
+    <td style="text-align: center;"><span class="math inline">\(\|x\|\)</span></td>
+    </tr>
+    <tr class="even">
+    <td style="text-align: center;">exp(x)</td>
+    <td style="text-align: center;">Exponantial x</td>
+    <td style="text-align: center;"><span class="math inline">\(e^x\)</span></td>
+    </tr>
+    <tr class="odd">
+    <td style="text-align: center;">log(x)</td>
+    <td style="text-align: center;">Logarithm with base e</td>
+    <td style="text-align: center;"><span class="math inline">\(log_ex\)</span></td>
+    </tr>
+    <tr class="even">
+    <td style="text-align: center;">log10(x)</td>
+    <td style="text-align: center;">Logarithm with base 10</td>
+    <td style="text-align: center;"><span class="math inline">\(log_{10}x\)</span></td>
+    </tr>
+    <tr class="odd">
+    <td style="text-align: center;">pow(x,y)</td>
+    <td style="text-align: center;">x raised to power y</td>
+    <td style="text-align: center;"><span class="math inline">\(x^y\)</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h1 id="type-conversion">Type Conversion</h1>
+    <p>During data manipulation, there might arise a need for converting an integer to float, float to an integer, float to a string or a string (having a number) to an integer or float. Lets look at how we can do this.</p>
+    <p>Let’s say we have a number ‘x’. The following some operations can be done:</p>
+    <ul>
+    <li><p><code>int(x)</code> converts it to an integer.</p></li>
+    <li><p><code>float(x)</code> converts it to a float.</p></li>
+    <li><p><code>complex(x)</code> converts it to a complex number with real part x and imaginary part 0.</p></li>
+    <li><p>We can convert an integer, a float or a complex to a string by <code>str(x)</code>.</p></li>
+    </ul>
+    <h2 id="calculate-the-compound-interest">Calculate the compound interest</h2>
+    <p>In this problem, you will calculate the compound interest. Remember that the formula for compound interest for the amount ‘A’ after ‘n’ years is <span class="math display">\[A = P \left(1 + \frac{r}{100} \right) ^n\]</span> Here, A is the amount after n years, r is the rate of interest per annum, and P is the principal.</p>
+    <p>Our task is to calculate the amount after two years when principal amount is USD 1000 at a rate of 10% per annum.</p>
+    <h3 id="instructions">Instructions</h3>
+    <ul>
+    <li><p>Save principal, rate of interest and time in variables p, r and n respectively.</p></li>
+    <li><p>Now calculate the amount according to formula given above and save it in a variable A.</p></li>
+    <li><p>Calculate interest by formula <span class="math inline">\(A-P\)</span> and store it in variable Interest.</p></li>
+    <li><p>Print out interest using print() function.</p></li>
+    </ul>
+    <p># Code Starts Here<br />
+    # Store variable names<br />
+    p = 1000<br />
+    r = 10<br />
+    n = 2<br />
+    # Amount formula<br />
+    A = p*(1+10/100)**2<br />
+    # Display Amount<br />
+    print(A)<br />
+    # Calculate and display interest<br />
+    interest = A-P print(interest)</p>
+    <p># Code ends here</p>
+    <h1 id="string">String</h1>
+    <p>Strings can be written in three ways:</p>
+    <ul>
+    <li><p>Single quotes.</p>
+    <p>Example:</p>
+    <p><code>name = ‘Ajeet’</code></p></li>
+    <li><p>Double quotes</p>
+    <p>Example:</p>
+    <p><code>name = “Ajeet”</code></p></li>
+    <li><p>Triple quotes: They are used as multi line comment and also used to make docstrings of a defined function.</p>
+    <p>Example:</p>
+    <p><code>“‘This is a function. Do not change it, or else it will not work.’”</code></p></li>
+    </ul>
+    <p>We can use Python’s built in len() function to find the length of string.</p>
+    <h2 id="slicing-and-indexing-of-strings">Slicing and Indexing of Strings</h2>
+    <p>Indexing means giving every character of string a unique value. Indexing in Python starts from zero, that means first letter of string has a value zero (not 1). All the iterables (String, dictionaries, tuples, sets) have this property.</p>
+    <table>
+    <tbody>
+    <tr class="odd">
+    <td style="text-align: center;">0</td>
+    <td style="text-align: center;">1</td>
+    <td style="text-align: center;">2</td>
+    <td style="text-align: center;">3</td>
+    <td style="text-align: center;">4</td>
+    <td style="text-align: center;">5</td>
+    <td style="text-align: center;">6</td>
+    <td style="text-align: center;">7</td>
+    <td style="text-align: center;">8</td>
+    <td style="text-align: center;">9</td>
+    <td style="text-align: center;">10</td>
+    <td style="text-align: center;">11</td>
+    </tr>
+    <tr class="even">
+    <td style="text-align: center;">M</td>
+    <td style="text-align: center;">O</td>
+    <td style="text-align: center;">N</td>
+    <td style="text-align: center;">T</td>
+    <td style="text-align: center;">Y</td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;">P</td>
+    <td style="text-align: center;">Y</td>
+    <td style="text-align: center;">T</td>
+    <td style="text-align: center;">H</td>
+    <td style="text-align: center;">O</td>
+    <td style="text-align: center;">N</td>
+    </tr>
+    <tr class="odd">
+    <td style="text-align: center;">-12</td>
+    <td style="text-align: center;">-11</td>
+    <td style="text-align: center;">-10</td>
+    <td style="text-align: center;">-9</td>
+    <td style="text-align: center;">-8</td>
+    <td style="text-align: center;">-7</td>
+    <td style="text-align: center;">-6</td>
+    <td style="text-align: center;">-5</td>
+    <td style="text-align: center;">-4</td>
+    <td style="text-align: center;">-4</td>
+    <td style="text-align: center;">-3</td>
+    <td style="text-align: center;">-1</td>
+    </tr>
+    </tbody>
+    </table>
+    <p>In the above image, for the string “Monty Python”, the following points can be noticed.</p>
+    <ul>
+    <li><p>From left to right, index goes from 0 to (length of string - 1).</p></li>
+    <li><p>From right to left, index goes from -(length of string) to -1.</p></li>
+    <li><p>Ommiting term before or after the colon (:) means including everything from starting or till the end, respectively.</p></li>
+    </ul>
+    <p>The syntex for slicing in Python, in general, is <strong>[Start index(included):Stop index(excluded)]</strong></p>
+    <p>In the above example:</p>
+    <p>if we assign variable</p>
+    <p>name = “Monty Python”</p>
+    <p>then:</p>
+    <ul>
+    <li><p><code>name[6:10]</code> returns <code>Pyth</code></p></li>
+    <li><p><code>name[-12:-7]</code> returns <code>Monty</code></p></li>
+    <li><p><code>name[:4]</code> returns <code>Monty</code></p></li>
+    <li><p><code>name[6:]</code> returns <code>Python</code></p></li>
+    <li><p><code>name[:]</code> returns <code>Monty Python</code></p></li>
+    <li><p><code>name[-6:9]</code> returns <code>Pyt</code></p></li>
+    </ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
+
+
+
+<div class="container mx-auto my-5">
+    <form action="https://formspree.io/f/xoqpywjj" method="POST">
+      <fieldset>
+        <legend>Contact Us</legend>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Write Your Name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+      </div>
+      <div class="m-2">
+      <button type="submit" class="btn btn-outline-primary btn-lg btn-block">Send</button>
+    </div>
+    </fieldset>
+    </form>
+  </div>
+
+
+
+<footer>Website designed by Ajeet Singh Parmar</footer>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+  crossorigin="anonymous"
+></script>
+</body>
+</html>
