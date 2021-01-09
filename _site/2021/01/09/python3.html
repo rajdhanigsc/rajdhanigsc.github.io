@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
     <title>Python Notes Topic 3</title>
     <link type="application/atom+xml" rel="alternate" href="ajeetsinghparmar.github.io/feed.xml" />
     <!-- Begin Jekyll SEO tag v2.7.1 -->
@@ -31,10 +32,16 @@
 <!-- End Jekyll SEO tag -->
 
   </head>
-  <body>
+<body onload="myFunction()">
+
+    <div class="spinner-border" id="loader"></div>
+    <main role="main" style="display:none;" class="container animate-bottom" id="main">
+  
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/index.html">SB</a>
+      <a href="/index.html">
+        <img class="icon" width="32px" src="/assets/img/favicon.png" alt="ASP">
+</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -246,10 +253,16 @@
 
 <footer>Website designed by Ajeet Singh Parmar</footer>
 
+    </main>
+
+
 <script
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
   crossorigin="anonymous"
 ></script>
+
+<script src="/assets/js/script.js"></script>
+
 </body>
 </html>
