@@ -1,0 +1,17 @@
+---
+title: Notes
+---
+
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropdown button
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    {% for note in site.data.notes.calculus %}
+      <li><a class="dropdown-item" href="{{ note.link }}" target="notes">{{note.name}}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+
+<iframe name="notes" width="640" height="480"></iframe>
+<!-- <iframe src="https://drive.google.com/file/d/1UnI6pMpVRKenqv2e_53bI0u-c3VpB5OT/preview" width="640" height="480"></iframe> -->

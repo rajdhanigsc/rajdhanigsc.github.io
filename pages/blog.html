@@ -6,7 +6,24 @@ title: blog
 
 
 <div class="container">
-    {% for post in site.posts %}
+
+    {% assign post = site.posts.first %}
+    <article class="media content-section">
+        <div class="media-body">
+            <div class="article-metadata">
+                {% assign author = site.authors | where: 'short_name', post.author | first %}
+                {% if author %}
+                <a href="{{ author.url }}" class="mr-2">{{ author.name }}</a>
+                {% endif %}
+                <small class="text-muted">{{ post.date | date_to_string }}</small>
+            </div>
+            <h1><a href="{{ post.url }}" class="article-title-first">{{ post.title }}</a></h1>
+            <p class="article-content">{{ post.excerpt | strip_html | strip_newlines | truncatewords: 20 }}</p>
+        </div>
+    </article>
+
+
+    {% for post in site.posts offset:1 %}
     <article class="media content-section">
         <div class="media-body">
             <div class="article-metadata">

@@ -49,4 +49,27 @@ ul.task-list{list-style: none;}
     to{ bottom:0; opacity:1 }
   }
   
+  iframe {
+    border: 2px solid gray;
+  }
+
+  .article-title {
+    color: purple;
+    text-decoration: none;
+  }
+
+  .article-title-first {
+    color: rebeccapurple;
+    text-decoration: none;
+  }
+
+  #mybtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+  }
 
