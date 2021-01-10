@@ -21,7 +21,7 @@ author: ajeet
 ### Search Engine Optimization
 - Write a code of html page structure optimized for search engine.
 
-    You have to push your files to the github repository [here](), or at my email address which I have already provided you or you can direct message me on whatsapp.
+    You have to push your files to the github repository [here](https://github.com/ajeetsinghparmar/webdevtest), or at my email address which I have already provided you or you can direct message me on whatsapp.
 
-        Content writers can directly send me .docx files or .tex files on email or on whatsapp.
+    Content writers can directly send me .docx files or .tex files on email or on whatsapp.
 
