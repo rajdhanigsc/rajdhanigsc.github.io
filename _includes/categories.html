@@ -1,0 +1,16 @@
+<div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex">
+        {% for category in site.categories %}
+          <a 
+          href="{{ category.url }}"
+          {% if page.url == category.url %}
+          class="p-2 link-primary" 
+          {% else %}
+          class="p-2 link-secondary" 
+          {% endif %}
+          >
+          {{ category.name }}
+        </a>
+        {% endfor %}
+    </nav>
+  </div>

@@ -1,6 +1,7 @@
 ---
 title: Assignment for Web Development Project
 author: ajeet
+category: webdev
 ---
 
 ### HTML and CSS

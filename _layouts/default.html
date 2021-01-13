@@ -35,7 +35,11 @@
       href="/assets/img/favicon.ico"
       type="image/x-icon"
     />
-    <title>{{ page.title }}</title>
+    {% if page.title %}
+    <title>{{ page.title }} | Ajeet's Educational Blog</title>
+    {% else %}
+    <title>Ajeet's Educational Blog</title>
+    {% endif %}
     {% feed_meta %} {% seo %}
   </head>
   <body onload="myFunction()">
@@ -48,7 +52,7 @@
       class="container animate-bottom"
       id="main"
     >
-      {% include navigation.html %} {{ content }} {% include contact.html %}
+      {% include navigation.html %} {% include categories.html %} {{ content }} {% include contact.html %}
 
       <button onclick="topFunction()" id="mybtn" class="btn btn-sm btn-secondary" title="Go to top">Top</button>
 
