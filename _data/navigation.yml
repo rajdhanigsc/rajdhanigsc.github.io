@@ -4,7 +4,9 @@
   link: /pages/about.html
 - name: Blog
   link: /pages/blog.html
-- name: Staff
-  link: /pages/staff.html
+- name: GSC Cabinet
+  link: /pages/team.html
 - name: Categories
   link: /pages/categories.html
+- name: Image Gallery
+  link: /pages/gallery.html

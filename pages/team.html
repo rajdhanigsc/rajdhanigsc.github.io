@@ -1,0 +1,25 @@
+---
+layout: default
+title: Cabinet
+---
+<h1>GSC Cabinet</h1>
+
+<div class="card">
+  {% for member in site.members %}
+  <article class="media content-section">
+    <div class="media-body">
+      <div class="row">
+        <div class="col-2 container article-container">
+          <img src="{{ member.image }}" alt="author pic" class="rounded-circle article-img">
+        </div>
+        <div class="col-8">
+          <h3 class="display-5"><a href="{{ member.url }}">{{ member.name }}</a></h3>
+          <p class="lead">{{ member.position }}</p>
+        </div>
+        <p>{{ member.content | markdownify }}</p>
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+</div>
+

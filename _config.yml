@@ -1,5 +1,5 @@
 collections:
-  authors:
+  members:
     output: true
   categories:
     output: true
@@ -7,9 +7,9 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "authors"
+      type: "members"
     values:
-      layout: "author"
+      layout: "member"
   - scope:
       path: ""
       type: "posts"
