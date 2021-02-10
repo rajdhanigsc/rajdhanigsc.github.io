@@ -4,8 +4,22 @@ title: Certificates of Apne Apne Gandhi Series 2
 
     <p>Here are the certificates of the participants of Apne Apne Gandhi Series 2. Click on your name below to download the certificate.</p>
 
-     <ul>
+    <div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+   Select Your Certificate 
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    {% for file in site.static_files %}
+    {% if file.path contains 'pdfs/certificates' %}
       <li>
-            <a href="https://drive.google.com/file/d/16ZJJlfxeoXWTIJq4G4mYCy9msiMClL06/view?usp=drivesdk">Ajeet Singh Parmar</a>
-      </li>
-    </ul>
+        <a class="dropdown-item" href="{{ site.baseurl }}{{ file.path }}" target="certificates">{{ file.name }}</a>
+        </li>
+      {% endif %}
+      {% endfor %}
+  </ul>
+</div>
+
+<div class="container">
+      <iframe name="certificates" frameborder="0"></iframe>
+</div>
