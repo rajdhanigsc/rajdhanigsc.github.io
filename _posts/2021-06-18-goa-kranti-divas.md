@@ -1,6 +1,6 @@
 ---
 title: गोवा क्रांति दिवस 
-author: ajeet
+author: researchteam
 category: gandhi
 ---
 
